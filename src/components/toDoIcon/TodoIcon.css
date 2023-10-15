@@ -1,0 +1,19 @@
+
+.Icon-check {
+    margin-left: 10px;
+    padding: 0;
+    /* color: #d408d7; */
+  }
+  
+.Icon-check--active {
+      color: #58b026;
+  }
+
+.Icon-delete {
+    /* color: #d408d7; */
+    margin-left: auto;
+}
+
+/* .Icon-delete:hover {
+    color: #e8e3e9; 
+} */

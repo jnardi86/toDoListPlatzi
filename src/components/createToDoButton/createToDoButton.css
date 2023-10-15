@@ -1,0 +1,47 @@
+.toDoCreate-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    position: absolute;
+    bottom: 100px;
+    right:50%;
+}
+
+.toDoCreate-container button {
+    background-color: rgba(101, 4, 77, 0.95);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    color: #f0aff1;
+    border: none;
+    font-family: 'Montserrat-Light';
+    font-size: 80px;
+    font-weight: bold;
+    /* cursor: pointer; */
+    padding: 5px;
+    height: 80px;
+    width: 80px;
+    z-index: 1;
+    /* transform: rotate(0);
+    transition: .3s ease; */
+}
+
+/* .toDoCreate-container button:hover{
+    transform: rotate(224deg);
+} */
+
+.rotateButton {
+    transform: rotate(224deg);
+    transition: .3s ease;
+}
+
+.initialPosition {
+    transform: rotate(0);
+    transition: .3s ease;
+}
+
+/* .toDoCreate-container button:hover {
+    background: rgba(186, 181, 181, 0.76);
+    color: #100d0d;
+} */

@@ -1,0 +1,42 @@
+.ToDoItem-container {
+    /* border: 1px solid #fff; */
+    width: 80%;
+}
+
+
+.ToDoItem-container-li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2px;
+}
+
+
+.TodoItem-p {
+    flex: 1;
+    margin-left: 10px;
+    font-family: 'Architects Daughter';
+    font-size: 1.3rem;
+}
+
+.TodoItem-p--complete {
+    text-decoration: line-through;
+}
+
+
+/* .Icon-check {
+  margin-left: 10px;
+  padding: 0;
+  color: #d408d7;
+}
+
+.Icon-check--active {
+    color: #58b026;
+} */
+
+
+
+/* .Icon-trash {
+    color: #d408d7;
+    margin-left: auto;
+} */

@@ -1,0 +1,8 @@
+.toDoList-container {
+    width: 100%;
+}
+
+.toDoList-container ul {
+    list-style: none;
+    margin-left: 20px;
+}

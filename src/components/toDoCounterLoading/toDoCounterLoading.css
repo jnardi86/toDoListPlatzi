@@ -1,0 +1,28 @@
+.toDoCounterLoading-container {
+    
+    display: flex;
+    justify-content: center;
+    background:transparent;
+    margin-top: 40px;
+}
+
+.toDoCounterLoadingTitle {
+    width: 90%;
+    height: 4rem;
+    border-radius: 10px;
+}
+
+.skeletonCounter {
+    opacity: .7;
+    animation: skeletonCounter-loading 1s linear infinite alternate;
+  }
+
+  @keyframes skeletonCounter-loading {
+    0% {
+      background-color: #d408d7;
+    }
+  
+    100% {
+      background-color: #eed7ef;
+    }
+  }
