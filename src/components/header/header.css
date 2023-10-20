@@ -1,0 +1,37 @@
+.toDoHeader {
+    width: 100%;
+    height: 15vh;
+    background-color: #000;
+    color: #fff;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #fff; */
+}
+
+.toDoHeader h1 {
+    font-family: Poppins;
+    font-size: 5rem;
+}
+
+.toDoHeader span {
+    background-color: #F49915;
+    padding: 3px;
+    border-radius: 5px;
+    color: #000;
+}
+
+/* mobile */
+
+@media (max-width: 767px) {
+    .toDoHeader {
+        height: auto; 
+        text-align: center; 
+        padding: 20px 0; 
+    }
+
+    .toDoHeader h1 {
+        font-size: 3rem; 
+    }
+}
+

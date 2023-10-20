@@ -5,7 +5,7 @@ const CompleteIcon = ({completed, onComplete}) => {
   return (
     <TodoIcon
     type="check"
-    color= { completed ? '#58b026' : '#d408d7'}
+    color= { completed ? '#58b026' : '#000'}
     onClick={onComplete}
     />
   )

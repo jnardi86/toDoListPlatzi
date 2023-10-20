@@ -6,7 +6,7 @@ const TodoList = ({children}) => {
   return (
   
     <div className='toDoList-container'>
-        <ul>
+        <ul className='toDoList-container--items'>
             {children}
         </ul>
     </div>

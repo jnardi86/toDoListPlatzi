@@ -4,5 +4,14 @@
 
 .toDoList-container ul {
     list-style: none;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
+
+.toDoList-container--items {
+    /* border: 1px solid white; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+

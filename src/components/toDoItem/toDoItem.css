@@ -9,6 +9,10 @@
     align-items: center;
     justify-content: space-between;
     margin-left: 2px;
+    margin-bottom: 15px;
+    background-color: #F49915;
+    border-radius: 5px;
+    height: 40px;
 }
 
 
@@ -17,6 +21,7 @@
     margin-left: 10px;
     font-family: 'Architects Daughter';
     font-size: 1.3rem;
+    color: #000;
 }
 
 .TodoItem-p--complete {

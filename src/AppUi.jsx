@@ -10,6 +10,7 @@ import Modal from './components/Modal';
 import { TodoContext } from './toDoContext';
 import './styles.css'
 import TodoForm from './components/toDoForm';
+import Header from './components/header/Header';
 
 const AppUi = () => {
 
@@ -23,10 +24,12 @@ const AppUi = () => {
     } = useContext(TodoContext);
 
     return (
-        <div className='main-container'>
-            <div className='container-left'>
-                {/* Otra forma de consumir la información del contexto */}
-                {/* <TodoContext.Consumer>
+        <>
+            <Header />
+            <div className='main-container'>
+                <div className='container-left'>
+                    {/* Otra forma de consumir la información del contexto */}
+                    {/* <TodoContext.Consumer>
                     {({
                         loading
                     }) => (
@@ -43,20 +46,21 @@ const AppUi = () => {
                     )}
 
                 </TodoContext.Consumer> */}
-                <div>
-                    {loading ? (
-                        <TodoCounterLoading />
-                    ) : (
-                        <TodoCounter />
-                    )}
-                </div>
+                    <div>
+                        {loading ? (
+                            <TodoCounterLoading />
+                        ) : (
+                            <TodoCounter />
+                        )}
+                    </div>
 
-            </div>
-            <div className='container-right'>
-                <TodoSearch>
-                </TodoSearch>
-                {/* Otra forma de consumir la información del contexto */}
-                {/* <TodoContext.Consumer>
+                </div>
+                <div className='container-right'>
+                    <div className='container-right--searchList'>
+                        <TodoSearch>
+                        </TodoSearch>
+                        {/* Otra forma de consumir la información del contexto */}
+                        {/* <TodoContext.Consumer>
                     {({
                         error,
                         loading,
@@ -87,36 +91,40 @@ const AppUi = () => {
                         </TodoList>
                     )}
                 </TodoContext.Consumer> */}
-                <TodoList>
-                    {loading &&
-                        (<div>
-                            <TodoLoading />
-                            <TodoLoading />
-                            <TodoLoading />
-                            <TodoLoading />
-                        </div>)}
-                    {error && <p>Ups...algo anda mal</p>}
-                    {(!loading && searchedTodos.length === 0)
-                        && <p className='noToDo'>Aún no tenes tareas en tu lista. Crea tu primer tarea!</p>}
-                    {searchedTodos.map(toDo => (
-                        <TodoItem
-                            key={toDo.text}
-                            text={toDo.text}
-                            completed={toDo.completed}
-                            onComplete={() => completeTodo(toDo.text)}
-                            onDelete={() => deleteTodo(toDo.text)}
-                        />
-                    ))}
-                </TodoList>
-            </div>
-            <CreateTodoButton />
-            {openModal && (
-                <Modal>
-                    <TodoForm />
-                </Modal>
-            )}
-        </div>
+                        <TodoList>
+                            {loading &&
+                                (<div>
+                                    <TodoLoading />
+                                    <TodoLoading />
+                                    <TodoLoading />
+                                    <TodoLoading />
+                                </div>)}
+                            {error && <p>Ups...algo anda mal</p>}
+                            {(!loading && searchedTodos.length === 0)
+                                && <p className='noToDo'>Aún no tenes tareas en tu lista. Crea tu primer tarea!</p>}
+                            {searchedTodos.map(toDo => (
+                                <TodoItem
+                                    key={toDo.text}
+                                    text={toDo.text}
+                                    completed={toDo.completed}
+                                    onComplete={() => completeTodo(toDo.text)}
+                                    onDelete={() => deleteTodo(toDo.text)}
+                                />
+                            ))}
+                        </TodoList>
+                    </div>
+                    <div className='container-right--createButton'>
+                        <CreateTodoButton />
+                        {openModal && (
+                            <Modal>
+                                <TodoForm />
+                            </Modal>
+                        )}
+                    </div>
 
+                </div>
+            </div>
+        </>
     )
 }
 

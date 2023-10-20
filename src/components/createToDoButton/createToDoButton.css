@@ -2,22 +2,23 @@
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
-    position: absolute;
+    /* border: 1px solid #fff; */
+    /* position: absolute; */
     bottom: 100px;
     right:50%;
 }
 
 .toDoCreate-container button {
-    background-color: rgba(101, 4, 77, 0.95);
+    background-color: #F49915;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 50%;
-    color: #f0aff1;
+    color: #000;
     border: none;
-    font-family: 'Montserrat-Light';
+    font-family: Poppins;
     font-size: 80px;
-    font-weight: bold;
+    font-weight: norma;
     /* cursor: pointer; */
     padding: 5px;
     height: 80px;
