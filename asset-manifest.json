@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/jnardi86/toDoListPlatzi/static/css/main.fec9ce0a.css",
+    "main.js": "/jnardi86/toDoListPlatzi/static/js/main.27cd90c9.js",
+    "static/media/Montserrat-Bold.ttf": "/jnardi86/toDoListPlatzi/static/media/Montserrat-Bold.2c155811b35513d5beaa.ttf",
+    "static/media/Montserrat-Light.ttf": "/jnardi86/toDoListPlatzi/static/media/Montserrat-Light.6fcc9263a21be961d246.ttf",
+    "static/media/Poppins-ExtraBold.ttf": "/jnardi86/toDoListPlatzi/static/media/Poppins-ExtraBold.01849ee091e1762a5dd5.ttf",
+    "static/media/ArchitectsDaughter-Regular.ttf": "/jnardi86/toDoListPlatzi/static/media/ArchitectsDaughter-Regular.97e4b635030c7d8a85d5.ttf",
+    "index.html": "/jnardi86/toDoListPlatzi/index.html",
+    "main.fec9ce0a.css.map": "/jnardi86/toDoListPlatzi/static/css/main.fec9ce0a.css.map",
+    "main.27cd90c9.js.map": "/jnardi86/toDoListPlatzi/static/js/main.27cd90c9.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fec9ce0a.css",
+    "static/js/main.27cd90c9.js"
+  ]
+}
