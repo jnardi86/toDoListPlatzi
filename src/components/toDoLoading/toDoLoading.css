@@ -1,33 +1,21 @@
 .toDoLoading-container {
-    width: 80%;
+    width: 100%;
     display: flex;
-    /* align-items: center; */
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-left: 2px;
+    /* border: 1px solid white; */
 }
 
-.toDoLoading-completeIcon{
-    /* border: 2px solid white; */
-    border-radius: 50%;
-    margin-top: 10px;
-    width: 25px;
-    height: 25px;
-}
-
-.toDoLoading-text {
-
+.toDoLoading-toDo {
     height: 30px;
-    width: 400px;
+    /* border: 1px solid white; */
+    width: 550px;
     margin-top: 10px ;
     border-radius: 10px;
 }
 
-.toDoLoading-deleteIcon {
-    border-radius: 50%;
-    margin-top: 10px;
-    width: 25px;
-    height: 25px;
-}
 
  .skeleton {
     opacity: .7;
@@ -48,10 +36,24 @@
 
   @keyframes skeleton-loading {
     0% {
-      background-color: #d408d7;
+      background-color: #000;
     }
   
     100% {
-      background-color: #eed7ef;
+      background-color: #F49915;
     }
   }
+
+/* mobile */
+
+@media (max-width: 767px) {
+
+.toDoLoading-toDo {
+
+  height: 30px;
+  width: 320px;
+  margin-top: 10px ;
+  border-radius: 10px;
+}
+
+}

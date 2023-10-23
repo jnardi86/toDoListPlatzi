@@ -19,10 +19,10 @@
 
   @keyframes skeletonCounter-loading {
     0% {
-      background-color: #d408d7;
+      background-color: #000;
     }
   
     100% {
-      background-color: #eed7ef;
+      background-color: #F49915;
     }
   }

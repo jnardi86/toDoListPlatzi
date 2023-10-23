@@ -37,6 +37,18 @@ const TodoProvider = ({ children }) => {
         saveTodos(newTodos);
     }
 
+    // UPDATE TASK FUNCTION
+
+    const updateTodo = (text) => {
+        const newTodos = [...todos];
+        newTodos.push({
+            text,
+            completed: false
+        });
+        saveTodos(newTodos);
+    }
+
+
     // COMPLETE FUNCTION
     const completeTodo = (text) => {
         const newTodos = [...todos];
@@ -65,6 +77,7 @@ const TodoProvider = ({ children }) => {
         <TodoContext.Provider value={{
             error,
             loading,
+            todos,
             toDosComplete,
             totalTodos,
             searchValue,
@@ -74,7 +87,8 @@ const TodoProvider = ({ children }) => {
             deleteTodo,
             openModal,
             setOpenModal,
-            addTodo
+            addTodo,
+            updateTodo
         }}>
             {children}
         </TodoContext.Provider>
